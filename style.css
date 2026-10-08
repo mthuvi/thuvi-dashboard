@@ -7,7 +7,6 @@
     src: url(src/font/SF-Pro-Display-Bold.otf);
 }
 
-
 *{
     background-color: #222;
     color: #fff;
@@ -24,14 +23,31 @@ h2{
 ul{
     list-style-type: none;
     overflow: hidden;
+    padding-top: 3%; 
 }
 
 ul li{
     float: right;
     padding-inline: 1%;
-    padding-top: 3%;
+    display: block;
+    transform-origin: right center;
+    transition: transform 0.7s ease;
 }
 
+ul li a{
+    color: rgb(156, 156, 156);
+    transition: 0.7s all;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    color: white;
+    transition: all 0.7s;
+}
 
 .splash{
     display: flex;
@@ -39,4 +55,9 @@ ul li{
     align-items: center;
     height: 90vh;
     flex-direction: column;
+}
+
+button{
+    border: 1px solid white;
+    border-radius: 25px;
 }
