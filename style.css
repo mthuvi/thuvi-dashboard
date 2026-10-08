@@ -1,0 +1,42 @@
+@font-face {
+    font-family: SF Pro;
+    src: url(src/font/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+    font-family: 'SF Pro Bold';
+    src: url(src/font/SF-Pro-Display-Bold.otf);
+}
+
+
+*{
+    background-color: #222;
+    color: #fff;
+    font-family: SF Pro;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: 'SF Pro Bold';
+    font-size: 70px;
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+ul li{
+    float: right;
+    padding-inline: 1%;
+    padding-top: 3%;
+}
+
+
+.splash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
